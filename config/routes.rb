@@ -13,4 +13,8 @@ Rails.application.routes.draw do
   post("/insert_photo", { :controller => "photos", :action => "create" })
 
   post("/update_photo/:photo_id", { :controller => "photos", :action => "update" })
+
+  post("/add_comment/:photo_id", { :controller => "photos", :action => "comment" })
+
+  post("/add_user", { :controller => "users", :action => "add_user" })
 end

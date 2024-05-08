@@ -4,8 +4,11 @@
   <dt> ID </dt>
 
   <dd> <%= @the_user.id %> </dd>
-  <dt> Edit User </dt>
-  <dd> forms </dd>
+  <dt> Edit user </dt>
+  <dd> <form action="/add_user" method="post">
+      <label for="username">Photo ID</label>
+      <input id="username type="text" name="input_username" placeholder = "Enter a username...">
+      <button> Add user </button>  </dd>
 
 </dl>
 
